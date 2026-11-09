@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NASA Space Explorer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1 class="wordmark"><span class="nasa-red">NASA</span> Space Explorer</h1>
+  </header>
+
+  <p id="factBanner" class="fact-banner"></p>
+
+  <section class="controls">
+    <label class="field">
+      <span>Start Date</span>
+      <input type="date" id="startDate">
+    </label>
+    <label class="field">
+      <span>End Date</span>
+      <input type="date" id="endDate">
+    </label>
+    <button id="fetchBtn">Get Space Images</button>
+  </section>
+
+  <p id="loadingMessage" class="loading-message hidden">Loading space photos…</p>
+  <p id="errorMessage" class="error-message hidden"></p>
+
+  <section id="gallery" class="gallery"></section>
+
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal-card">
+      <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
+      <div id="modalMedia" class="modal-media"></div>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDate" class="modal-date"></p>
+      <p id="modalExplanation" class="modal-explanation"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
