@@ -2,7 +2,7 @@
 // DEMO_KEY works out of the box but is rate-limited (30 req/hour, 50/day
 // shared by everyone using it). Get your own free key in seconds at
 // https://api.nasa.gov and paste it in below.
-const API_KEY = "DEMO_KEY";
+const API_KEY = jfDGtr7wJjhHtD68LMRKNDFwLCwKLfTCCmKwGBRJ;
 
 // ---- DOM references ----
 const startInput = document.getElementById("startDate");
